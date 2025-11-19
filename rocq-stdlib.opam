@@ -28,8 +28,15 @@ depends: [
   "rocq-core" {>= "9.0"}
 ]
 build: [
-  [make "-j" jobs]
-]
-install: [
-  [make "install"]
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
 ]
