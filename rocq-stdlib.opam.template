@@ -2,9 +2,3 @@ depends: [
   "rocq-runtime"
   "rocq-core" {>= "9.0"}
 ]
-build: [
-  [make "-j" jobs]
-]
-install: [
-  [make "install"]
-]

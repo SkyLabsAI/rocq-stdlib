@@ -22,12 +22,8 @@ license: "LGPL-2.1-only"
 homepage: "https://coq.inria.fr/"
 doc: "https://coq.github.io/doc/"
 bug-reports: "https://github.com/coq/stdlib/issues"
-dev-repo: "git+https://github.com/coq/stdlib.git"
-depends: [
-  "rocq-runtime"
-  "rocq-core" {>= "9.0"}
-]
 build: [
+  ["dune" "subst"] {dev}
   [
     "dune"
     "build"
@@ -39,4 +35,9 @@ build: [
     "@runtest" {with-test}
     "@doc" {with-doc}
   ]
+]
+dev-repo: "git+https://github.com/coq/stdlib.git"
+depends: [
+  "rocq-runtime"
+  "rocq-core" {>= "9.0"}
 ]
