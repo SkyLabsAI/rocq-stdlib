@@ -37,6 +37,7 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/coq/stdlib.git"
+x-maintenance-intent: ["(latest)"]
 depends: [
   "rocq-runtime"
   "rocq-core" {>= "9.1"}
