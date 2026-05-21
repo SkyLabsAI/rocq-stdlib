@@ -5,7 +5,7 @@
  (package rocq-stdlib))
 
 (env
- (dev
+ (_
   (rocq
    ;; see theories/_CoqProject for details
    (flags :standard -w -non-boolean-if))))
