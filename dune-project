@@ -1,10 +1,7 @@
-(lang dune 3.21)
+(lang dune 3.26)
 (name rocq-stdlib)
 
-; We use directory targets in documentation
-(using directory-targets 0.1)
-
-(using rocq 0.11)
+(using rocq 0.15)
 
 (formatting
  (enabled_for ocaml))

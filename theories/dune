@@ -1,8 +1,8 @@
 (include_subdirs qualified)
 (rocq.theory
  (name Stdlib)
- (generate_project_file)
- (package rocq-stdlib))
+ (public_name rocq-stdlib)
+ (generate_project_file))
 
 (env
  (_
